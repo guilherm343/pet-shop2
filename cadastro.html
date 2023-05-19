@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Little Pet Shop - Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="container_cadastro">
+        <div id="esquerda-cadastro">
+            <div id="container-cadastro">
+                <img src="img/Logo pet.png" id="logo-cadastro">
+            </div>
+            <div id="contato-conteudo-cadastro">
+                <form id="frmcontato" name="frmcontato" action="#">
+                    <input id="inEmail" type="email" name="inEmail" placeholder="Insira seu e-mail aqui" required />
+                    <input id="inName" type="text" name="inName" placeholder="Insira seu nome aqui" required />
+                    <input id="inSenha" type="password" name="inSenha" placeholder="Insira sua senha" required />
+                    <input id="inData" type="date" name="inData" placeholder="Insira uma data" required />
+                    <input id="inEndereco" type="text" name="inEndereco" placeholder="Insira seu endereço" required />
+                    <input id="inCidade" type="text" name="inCidade" placeholder="Insira sua cidade" required />
+                    <input id="inUf" type="text" name="inUf" placeholder="Insira sua UF" required />
+                    <input id="inId" type="number" name="inId" placeholder="Insira seu ID" required />
+                    <input id="inTelefone" type="text" name="inTelefone" placeholder="Insira seu telefone" required />
+                    <input id="inPet" type="text" name="inPet" placeholder="Insira o nome do seu pet" required />
+                    <select id="inTipoAnimal" name="inTipoAnimal" onchange="mostrarCampo()">
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                        <option value="ave">Ave</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                    <input id="inOutros" type="text" name="inOutros" placeholder="Insira o tipo do seu pet" required />
+                    <input id="inidade" type="number" name="inidade" placeholder="Insira a idade do seu pet" required />
+                    <div id="botoes">
+                        <button id="btnEnviar" name="btnEnviar" type="button" onclick="validarDados()">
+                            Criar sua conta
+                        </button>
+                    </div>
+                </form>
+
+                <!--Fim da div de login-->
+            </div>
+            <div id="contato-conteudo2-cadastro">
+                <p id="voltar-cadastro">
+                    <a href="login.html">
+                        Voltar
+                    </a>
+                </p>
+                <p id="texto-termos-cadastro">
+                    Ao criar uma conta, você concorda com os Termos e Condições de Uso da Little Pet Shop. Para saber
+                    como tratamos os seus dados pessoais, acesse o nosso Aviso de Privacidade.
+                </p>
+            </div>
+        </div>
+
+        <div id="direita-cadastro">
+            <div id="mensagemErro"> </div>
+        </div>
+        <div id="conteudo3-cadastro">
+            <img src="img/Rectangle 24.png" id="foto-cachorro-cadastro">
+        </div>
+    </div>
+
+    
+</body>
+<script src="js/scripts.js"></script>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Little Pet Shop</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="icon" type="imagem/png" href="img/Logo pet.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Topo de cabeçalho do site -->
+    <header>
+        <a href="home.html">
+            <img id="logo" src="img/Logo pet.png" alt="Logo do site" />
+        </a>
+        <div id="container-home">
+            <div id="frm-cep"><a href="dashbord.html"><img src="img/Vector.png"> informações</div></a>
+            <div id="frm-container-home">
+                <div id="frm-barra">
+                    <input name="frm-nome" type="text" placeholder="Digite o que você procura" required />
+                </div>
+            </div>
+            <div id="frm-atendimento"> <a href="contato.html"><img src="img/fone.png">
+                    Atendimento
+                </a>
+            </div>
+            <div id="frm-carrinho"><a href="cadastro.html"><img src="img/carrinho.png" alt="carrinho site"></a></div>
+            <div id="frm-cadastro">
+                <a href="login.html"> <img src="img/cadastro-opcoes.png" alt="cadastro-opcoes"></a>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="menu-drop-down">
+        <ul>
+
+            <li class="dropdown">
+                <a href="produto01.html" class="dropbtn">Rações <img src="img/sda.png" alt="Icone Seta" />
+                </a>
+                <div class="dropdown-content">
+                    <a href="produto01.html">Rações umidas</a>
+                    <a href="produto01.html">Rações secas</a>
+                    <a href="produto03.html">Rações diversas</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="produto03.html" class="dropbtn">Pets <img src="img/sda.png" alt="Icone Seta" />
+                </a>
+                <div class="dropdown-content">
+                    <a href="produto01.html">Cães</a>
+                    <a href="produto01.html">Gatos</a>
+                    <a href="produto03.html">Peixes</a>
+                    <a href="produto03.html">Aves</a>
+                    <a href="produto03.html">Outros Pets</a>
+                </div>
+            </li>
+
+            <li>
+                <a href="produto02.html" class="dropbtn">Brinquedos
+                </a>
+            </li>
+
+            <li class="dropdown">
+                <a href="home.html" class="dropbtn">Marcas <img src="img/sda.png" alt="Icone Seta" />
+                </a>
+                <div class="dropdown-content">
+                    <p>
+                        <img class="imgMarca" src="img/marca1.webp" alt="" />
+                        <img class="imgMarca" src="img/marca2.webp" alt="" />
+                    </p>
+
+                    <p><img class="imgMarca" src="img/marca3.webp" alt="" /></p>
+                </div>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="login.html" class="active">Super ofertas
+                </a>
+            </li>
+    </div>
+
+    <div id="imagem-agendamento">
+        <div id="container-agendamento">
+            <h2>Seu Pet precisa de um banho?</h2>
+            Preencha o formulario ao lado para nos enviar uma mensagem.
+            Responderemos o mais breve possível.
+        </div>
+        <div id="frm-agendamento">
+            <div id="frm-campo">
+                <form id="frmFormulario" name="frmFormulario" action="#">
+                    <p>Nome do cliente:</p>
+                    <input  id="nomeAgendamento" name="nomeAgendamento" type="text"
+                        placeholder="Insira seu nome aqui" required />
+
+                    <p>E-mail:</p>
+                    <input  id="emailAgendamento" name="emailAgendamento" type="email"
+                        placeholder="Insira seu e-mail aqui" required />
+
+                    <p>Telefone:</p>
+                    <input  id="teleAgendamento" name="teleAgendamento" type="text"
+                        placeholder="Insira seu telefone aqui" required />
+
+                    <p>Nome do Pet:</p>
+                    <input id="petAgendamento" name="petAgendamento" type="text"
+                        placeholder="Insira o nome do Pet" required />
+
+                    <p>Data:</p>
+                    <input id="dataAgendamento" name="dataAgendamento" type="date"
+                        placeholder="01/01/2023" required />
+
+                    <p>Hora do agendamento:</p>
+                    <input id="horaAgendamento" name="horaAgendamento" type="time"
+                        placeholder="Insira a hora do agendamento" required />
+
+
+                    <div id="frm-button">
+                        <button id="botao-entrar2" name="botao-entrar2" type="button" onclick="msgErroAgendamento()">Enviar</button>
+                        <button id="botao-apagar" type="reset">Apagar</button>
+                    </div>
+                </form>
+                <div id="mensagem-erro">Mensagem de erro:</div>
+            </div>
+        </div>
+
+
+        
+
+
+
+</body>
+    <script src="js/scripts.js"></script>
+</html>
